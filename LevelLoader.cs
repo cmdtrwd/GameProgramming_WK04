@@ -7,7 +7,7 @@ public class LevelLoader : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject); // Prevent this object from being destroyed when loading a new scene        
+        // DontDestroyOnLoad(gameObject); // Prevent this object from being destroyed when loading a new scene        
     }
 
     void Update()
