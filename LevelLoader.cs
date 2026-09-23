@@ -3,12 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-    private Animator anim;
-    void Start()
-    {
-        anim = GetComponent<Animator>(); // Get the Animator component attached to this GameObject
-    }
-
+    public Animator anim;
     void Update()
     {        
         if(Input.GetKeyDown(KeyCode.Space)){            
