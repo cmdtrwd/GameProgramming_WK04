@@ -4,6 +4,12 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     public Animator anim;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject); // Prevent this object from being destroyed when loading a new scene        
+    }
+
     void Update()
     {        
         if(Input.GetKeyDown(KeyCode.Space)){            
@@ -19,4 +25,6 @@ public class LevelLoader : MonoBehaviour
     public void LoadNextScene(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    
 }
